@@ -3,7 +3,7 @@ services:
   mysql:
     image: postgres
     ports:
-      - '3306:3306'
+      - '3000:3306'
     volumes:
       - ./data:/var/lib/mysql
     environment:
