@@ -5,9 +5,8 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - ./data:/var/lib/postgres
+      - ./data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_RANDOM_ROOT_PASSWORD=yes
-      - POSTGRES_DATABASE=POSTGRES_DB
-      - POSTGRES_USER=app
-      - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
+        - POSTGRES_DB=api
+        - POSTGRES_USER=app
+        - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
